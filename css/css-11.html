@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CSS Practical Program</title>
+<style>
+:root{
+  --primary:#0b74e8;
+  --primary2:#2563eb;
+  --dark:#102a43;
+  --muted:#5b7083;
+  --bg:#eef6ff;
+  --card:#ffffff;
+  --border:#d9e7f5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#0b2d68,#0876d1 55%,#54b7e8);
+  min-height:100vh;color:#17324d;
+}
+.page{max-width:1100px;margin:0 auto;padding:28px 18px 45px}
+.topbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.topbar a,.btn{
+  display:inline-block;text-decoration:none;color:white;background:var(--primary);
+  padding:10px 16px;border-radius:9px;font-weight:700;border:0;cursor:pointer
+}
+.topbar a:hover,.btn:hover{filter:brightness(.92)}
+.card{
+  background:rgba(255,255,255,.97);border-radius:20px;padding:28px;
+  box-shadow:0 14px 40px rgba(0,0,0,.16);margin-bottom:20px
+}
+h1{margin:0 0 8px;font-size:clamp(26px,4vw,40px);color:var(--dark)}
+h2{color:var(--primary2)}
+.subtitle{color:var(--muted);line-height:1.6}
+.question{
+  background:#f5faff;border-left:5px solid var(--primary);padding:15px 18px;
+  border-radius:10px;line-height:1.6
+}
+.demo{margin-top:20px;padding:22px;background:#fff;border:1px solid var(--border);border-radius:14px}
+input,select,textarea{padding:10px;border:1px solid #b8cce0;border-radius:8px;margin:5px 0;max-width:100%}
+button{padding:10px 16px;border:0;border-radius:8px;background:var(--primary);color:white;font-weight:700;cursor:pointer}
+table{border-collapse:collapse;width:100%;margin:15px 0}
+th,td{border:1px solid #9fb6cc;padding:10px;text-align:center}
+th{background:#eaf4ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.box{padding:18px;border-radius:12px;background:#eef7ff;border:1px solid #cfe3f7}
+.note{font-size:14px;color:var(--muted)}
+.result{margin-top:15px;padding:12px;border-radius:8px;background:#edf8ef;color:#175b28;font-weight:700}
+footer{text-align:center;color:#e9f5ff;margin-top:20px;font-size:14px}
+@media(max-width:650px){.card{padding:20px}.topbar a{width:100%;text-align:center}}
+.flex-demo{display:flex;justify-content:space-around;align-items:center;gap:10px}.flex-demo div{padding:30px;background:#dff1ff;flex:1;text-align:center}</style>
+<style>
+.codebox{white-space:pre-wrap;overflow:auto;background:#0b1220;color:#e8f0ff;padding:18px;border-radius:14px;font-family:Consolas,Monaco,monospace;font-size:13px;line-height:1.55;border:1px solid #22304a;}
+#program-code h2{margin-top:0;color:#2563eb}
+</style></head>
+<body>
+<div class="page">
+<nav class="topbar">
+<a href="../index.html">⌂ Home</a>
+<a href="index.html">← Back to CSS Programs</a>
+</nav>
+<main class="card">
+<h1>CSS – Program 11</h1>
+<p class="subtitle">Practical Programs Website • CSS section</p>
+<div class="question"><strong>Question 11</strong><br/>Create a webpage demonstrating pseudo-elements such as ::before, ::after, ::first-letter, and ::first-line.</div>
+<div class="demo">
+<h2>Working Demonstration</h2>
+<p class="pseudo-element">Pseudo-elements add generated content and style the first letter.</p>
+</div>
+</main><section class="card" id="program-code"><h2>Program Code</h2><p class="note">Copy and run this program. The working result is shown below.</p><pre class="codebox">&lt;style&gt;
+  --border:#d9e7f5;
+*{box-sizing:border-box}
+  margin:0;font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#0b2d68,#0876d1 55%,#54b7e8);
+  min-height:100vh;color:#17324d;
+.page{max-width:1100px;margin:0 auto;padding:28px 18px 45px}
+.topbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+  display:inline-block;text-decoration:none;color:white;background:var(--primary);
+  padding:10px 16px;border-radius:9px;font-weight:700;border:0;cursor:pointer
+  background:rgba(255,255,255,.97);border-radius:20px;padding:28px;
+  box-shadow:0 14px 40px rgba(0,0,0,.16);margin-bottom:20px
+h1{margin:0 0 8px;font-size:clamp(26px,4vw,40px);color:var(--dark)}
+h2{color:var(--primary2)}
+.subtitle{color:var(--muted);line-height:1.6}
+  background:#f5faff;border-left:5px solid var(--primary);padding:15px 18px;
+  border-radius:10px;line-height:1.6
+.demo{margin-top:20px;padding:22px;background:#fff;border:1px solid var(--border);border-radius:14px}
+input,select,textarea{padding:10px;border:1px solid #b8cce0;border-radius:8px;margin:5px 0;max-width:100%}
+button{padding:10px 16px;border:0;border-radius:8px;background:var(--primary);color:white;font-weight:700;cursor:pointer}
+table{border-collapse:collapse;width:100%;margin:15px 0}
+th,td{border:1px solid #9fb6cc;padding:10px;text-align:center}
+th{background:#eaf4ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.box{padding:18px;border-radius:12px;background:#eef7ff;border:1px solid #cfe3f7}
+.note{font-size:14px;color:var(--muted)}
+.result{margin-top:15px;padding:12px;border-radius:8px;background:#edf8ef;color:#175b28;font-weight:700}
+footer{text-align:center;color:#e9f5ff;margin-top:20px;font-size:14px}
+@media(max-width:650px){.card{padding:20px}.topbar a{width:100%;text-align:center}}
+.flex-demo{display:flex;justify-content:space-around;align-items:center;gap:10px}.flex-demo div{padding:30px;background:#dff1ff;flex:1;text-align:center}
+&lt;/style&gt;
+
+&lt;div class="demo"&gt;
+
+&lt;p class="pseudo-element"&gt;Pseudo-elements add generated content and style the first letter.&lt;/p&gt;
+&lt;/div&gt;</pre></section>
+<footer>Web Technology Practical Programs © 2026</footer>
+</div>
+<script></script>
+</body>
+</html>

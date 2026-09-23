@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML • CSS • JavaScript Practical Programs</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#061d46,#0758b8 50%,#43b8e8);color:#17324d;min-height:100vh}
+.hero{text-align:center;color:#fff;padding:50px 18px 28px}
+.hero h1{margin:0;font-size:clamp(32px,5vw,54px);letter-spacing:.5px}
+.hero p{margin:12px 0 0;font-size:18px;color:#e9f6ff}
+.nav{position:sticky;top:0;z-index:10;background:rgba(4,25,62,.92);backdrop-filter:blur(8px);padding:12px 18px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.nav a{color:#fff;text-decoration:none;padding:9px 16px;border-radius:999px;background:#ffffff18;border:1px solid #ffffff30;font-weight:700}
+.nav a:hover{background:#0b86ed}
+.container{max-width:1250px;margin:auto;padding:22px 18px 50px}
+.section{background:rgba(255,255,255,.97);border-radius:24px;padding:28px;margin:24px 0;box-shadow:0 18px 50px rgba(0,0,0,.2)}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:20px}
+.section-title{display:flex;align-items:center;gap:14px}
+.icon{font-size:42px}.section h2{margin:0;font-size:30px}.section p{color:#5b7083;line-height:1.6}
+.count{background:#eaf4ff;color:#086fd1;padding:8px 13px;border-radius:999px;font-weight:700}
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:13px}
+.program{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:#17324d;background:#f9fcff;border:1px solid #d8e7f5;border-radius:14px;padding:14px;transition:.2s}
+.program:hover{transform:translateY(-3px);box-shadow:0 9px 22px rgba(20,80,130,.14);border-color:#69b7ee}
+.num{flex:0 0 42px;height:42px;display:grid;place-items:center;border-radius:10px;background:linear-gradient(135deg,#0876d1,#2563eb);color:#fff;font-weight:800}
+.program b{display:block;margin:2px 0 5px}.program small{display:block;color:#5b7083;line-height:1.45}
+.top{display:inline-block;color:#086fd1;text-decoration:none;font-weight:700;margin-top:18px}
+footer{text-align:center;color:#dff2ff;padding:10px 18px 28px}
+@media(max-width:600px){.list{grid-template-columns:1fr}.section{padding:20px}.program{padding:12px}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+<h1>HTML • CSS • JavaScript</h1>
+<p>Complete Practical Programs Website</p>
+</header>
+<nav class="nav">
+<a href="#html">🌐 HTML Programs</a>
+<a href="#css">🎨 CSS Programs</a>
+<a href="#javascript">⚡ JavaScript Programs</a>
+</nav>
+<main class="container">
+<section class="section" id="html">
+<div class="section-head"><div class="section-title"><span class="icon">🌐</span><div><h2>HTML Programs</h2><p>All HTML practical programs with their questions. Each item opens its own separate program file.</p></div></div><span class="count">15 Programs</span></div>
+<div class="list">
+<a class="program" href="html/html-01.html"><span class="num">01</span><div><b>Program 1</b><small>Create a basic HTML webpage using headings, paragraphs, and line breaks.</small></div></a>
+<a class="program" href="html/html-02.html"><span class="num">02</span><div><b>Program 2</b><small>Create an HTML page containing ordered, unordered, and description lists.</small></div></a>
+<a class="program" href="html/html-03.html"><span class="num">03</span><div><b>Program 3</b><small>Create a webpage using tables with rows, columns, borders, and merged cells.</small></div></a>
+<a class="program" href="html/html-04.html"><span class="num">04</span><div><b>Program 4</b><small>Create an HTML page containing images and hyperlinks.</small></div></a>
+<a class="program" href="html/html-05.html"><span class="num">05</span><div><b>Program 5</b><small>Create a student registration form using HTML form elements.</small></div></a>
+<a class="program" href="html/html-06.html"><span class="num">06</span><div><b>Program 6</b><small>Create a webpage using audio and video elements.</small></div></a>
+<a class="program" href="html/html-07.html"><span class="num">07</span><div><b>Program 7</b><small>Create a webpage using frames/iframes.</small></div></a>
+<a class="program" href="html/html-08.html"><span class="num">08</span><div><b>Program 8</b><small>Create an HTML page demonstrating semantic elements such as header, nav, section, article, and footer.</small></div></a>
+<a class="program" href="html/html-09.html"><span class="num">09</span><div><b>Program 9</b><small>Create a webpage using HTML5 input types such as email, date, number, and password.</small></div></a>
+<a class="program" href="html/html-10.html"><span class="num">10</span><div><b>Program 10</b><small>Create a college timetable using an HTML table.</small></div></a>
+<a class="program" href="html/html-11.html"><span class="num">11</span><div><b>Program 11</b><small>Create a webpage with internal and external CSS styling.</small></div></a>
+<a class="program" href="html/html-12.html"><span class="num">12</span><div><b>Program 12</b><small>Create a webpage demonstrating CSS selectors, colors, fonts, margins, padding, and borders.</small></div></a>
+<a class="program" href="html/html-13.html"><span class="num">13</span><div><b>Program 13</b><small>Create a responsive webpage using CSS media queries.</small></div></a>
+<a class="program" href="html/html-14.html"><span class="num">14</span><div><b>Program 14</b><small>Create a webpage using Bootstrap components.</small></div></a>
+<a class="program" href="html/html-15.html"><span class="num">15</span><div><b>Program 15</b><small>Create a simple personal portfolio webpage using HTML and CSS.</small></div></a>
+</div><a class="top" href="#top">↑ Back to top</a>
+</section>
+<section class="section" id="css">
+<div class="section-head"><div class="section-title"><span class="icon">🎨</span><div><h2>CSS Programs</h2><p>All CSS practical programs with their questions. Each item opens its own separate program file.</p></div></div><span class="count">75 Programs</span></div>
+<div class="list">
+<a class="program" href="css/css-01.html"><span class="num">01</span><div><b>Program 1</b><small>Create a webpage demonstrating inline, internal, and external CSS.</small></div></a>
+<a class="program" href="css/css-02.html"><span class="num">02</span><div><b>Program 2</b><small>Create a webpage using different CSS selectors.</small></div></a>
+<a class="program" href="css/css-03.html"><span class="num">03</span><div><b>Program 3</b><small>Demonstrate CSS colors, backgrounds, and borders.</small></div></a>
+<a class="program" href="css/css-04.html"><span class="num">04</span><div><b>Program 4</b><small>Create a webpage demonstrating font properties and text formatting.</small></div></a>
+<a class="program" href="css/css-05.html"><span class="num">05</span><div><b>Program 5</b><small>Demonstrate the CSS box model using margin, border, padding, and content.</small></div></a>
+<a class="program" href="css/css-06.html"><span class="num">06</span><div><b>Program 6</b><small>Create a webpage using different width, height, and sizing properties.</small></div></a>
+<a class="program" href="css/css-07.html"><span class="num">07</span><div><b>Program 7</b><small>Create a webpage demonstrating CSS positioning — static, relative, absolute, fixed, and sticky.</small></div></a>
+<a class="program" href="css/css-08.html"><span class="num">08</span><div><b>Program 8</b><small>Create a webpage using float and clear properties.</small></div></a>
+<a class="program" href="css/css-09.html"><span class="num">09</span><div><b>Program 9</b><small>Create a styled navigation bar using CSS.</small></div></a>
+<a class="program" href="css/css-10.html"><span class="num">10</span><div><b>Program 10</b><small>Create a webpage demonstrating pseudo-classes such as :hover, :active, :focus, and :visited.</small></div></a>
+<a class="program" href="css/css-11.html"><span class="num">11</span><div><b>Program 11</b><small>Create a webpage demonstrating pseudo-elements such as ::before, ::after, ::first-letter, and ::first-line.</small></div></a>
+<a class="program" href="css/css-12.html"><span class="num">12</span><div><b>Program 12</b><small>Create a webpage using CSS lists and tables.</small></div></a>
+<a class="program" href="css/css-13.html"><span class="num">13</span><div><b>Program 13</b><small>Create a webpage with a styled registration form using CSS.</small></div></a>
+<a class="program" href="css/css-14.html"><span class="num">14</span><div><b>Program 14</b><small>Create a webpage demonstrating CSS Flexbox.</small></div></a>
+<a class="program" href="css/css-15.html"><span class="num">15</span><div><b>Program 15</b><small>Create a webpage demonstrating CSS Grid layout.</small></div></a>
+<a class="program" href="css/css-16.html"><span class="num">16</span><div><b>Program 16</b><small>Create a responsive webpage using CSS media queries.</small></div></a>
+<a class="program" href="css/css-17.html"><span class="num">17</span><div><b>Program 17</b><small>Create a webpage demonstrating transitions and transformations.</small></div></a>
+<a class="program" href="css/css-18.html"><span class="num">18</span><div><b>Program 18</b><small>Create a webpage using CSS animations.</small></div></a>
+<a class="program" href="css/css-19.html"><span class="num">19</span><div><b>Program 19</b><small>Create a responsive navigation menu using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-20.html"><span class="num">20</span><div><b>Program 20</b><small>Design a personal portfolio webpage using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-21.html"><span class="num">21</span><div><b>Program 21</b><small>Design a college/student profile page using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-22.html"><span class="num">22</span><div><b>Program 22</b><small>Create a login page using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-23.html"><span class="num">23</span><div><b>Program 23</b><small>Create a product card layout using CSS.</small></div></a>
+<a class="program" href="css/css-24.html"><span class="num">24</span><div><b>Program 24</b><small>Create a responsive photo gallery using CSS Grid/Flexbox.</small></div></a>
+<a class="program" href="css/css-25.html"><span class="num">25</span><div><b>Program 25</b><small>Create a complete website homepage using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-26.html"><span class="num">26</span><div><b>Program 26</b><small>Create a webpage demonstrating CSS inheritance and specificity.</small></div></a>
+<a class="program" href="css/css-27.html"><span class="num">27</span><div><b>Program 27</b><small>Demonstrate the use of universal, element, class, ID, attribute, and grouping selectors.</small></div></a>
+<a class="program" href="css/css-28.html"><span class="num">28</span><div><b>Program 28</b><small>Create a webpage using combinator selectors: descendant, child, adjacent sibling, and general sibling.</small></div></a>
+<a class="program" href="css/css-29.html"><span class="num">29</span><div><b>Program 29</b><small>Create a webpage demonstrating CSS variables (custom properties).</small></div></a>
+<a class="program" href="css/css-30.html"><span class="num">30</span><div><b>Program 30</b><small>Create a webpage using different background images and background positioning.</small></div></a>
+<a class="program" href="css/css-31.html"><span class="num">31</span><div><b>Program 31</b><small>Demonstrate linear gradients and radial gradients using CSS.</small></div></a>
+<a class="program" href="css/css-32.html"><span class="num">32</span><div><b>Program 32</b><small>Create a webpage demonstrating box-shadow and text-shadow.</small></div></a>
+<a class="program" href="css/css-33.html"><span class="num">33</span><div><b>Program 33</b><small>Create a webpage using border-radius to design different shapes.</small></div></a>
+<a class="program" href="css/css-34.html"><span class="num">34</span><div><b>Program 34</b><small>Demonstrate opacity and transparency using CSS.</small></div></a>
+<a class="program" href="css/css-35.html"><span class="num">35</span><div><b>Program 35</b><small>Create a webpage using overflow properties.</small></div></a>
+<a class="program" href="css/css-36.html"><span class="num">36</span><div><b>Program 36</b><small>Demonstrate z-index and stacking order.</small></div></a>
+<a class="program" href="css/css-37.html"><span class="num">37</span><div><b>Program 37</b><small>Create a webpage using CSS display properties such as block, inline, inline-block, and none.</small></div></a>
+<a class="program" href="css/css-38.html"><span class="num">38</span><div><b>Program 38</b><small>Create a webpage demonstrating visibility and hiding elements.</small></div></a>
+<a class="program" href="css/css-39.html"><span class="num">39</span><div><b>Program 39</b><small>Create a dropdown menu using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-40.html"><span class="num">40</span><div><b>Program 40</b><small>Create an image hover effect using CSS.</small></div></a>
+<a class="program" href="css/css-41.html"><span class="num">41</span><div><b>Program 41</b><small>Create a tooltip using CSS.</small></div></a>
+<a class="program" href="css/css-42.html"><span class="num">42</span><div><b>Program 42</b><small>Create a webpage with a CSS-only button hover animation.</small></div></a>
+<a class="program" href="css/css-43.html"><span class="num">43</span><div><b>Program 43</b><small>Create a webpage demonstrating CSS filters such as blur, grayscale, brightness, and contrast.</small></div></a>
+<a class="program" href="css/css-44.html"><span class="num">44</span><div><b>Program 44</b><small>Create a webpage demonstrating object-fit and object-position.</small></div></a>
+<a class="program" href="css/css-45.html"><span class="num">45</span><div><b>Program 45</b><small>Create a responsive image gallery using CSS.</small></div></a>
+<a class="program" href="css/css-46.html"><span class="num">46</span><div><b>Program 46</b><small>Create a card-based layout using Flexbox.</small></div></a>
+<a class="program" href="css/css-47.html"><span class="num">47</span><div><b>Program 47</b><small>Create a dashboard layout using CSS Grid.</small></div></a>
+<a class="program" href="css/css-48.html"><span class="num">48</span><div><b>Program 48</b><small>Create a two-column webpage layout using CSS Grid.</small></div></a>
+<a class="program" href="css/css-49.html"><span class="num">49</span><div><b>Program 49</b><small>Create a three-column webpage layout using Flexbox.</small></div></a>
+<a class="program" href="css/css-50.html"><span class="num">50</span><div><b>Program 50</b><small>Create a webpage with a sticky header.</small></div></a>
+<a class="program" href="css/css-51.html"><span class="num">51</span><div><b>Program 51</b><small>Create a webpage with a fixed sidebar.</small></div></a>
+<a class="program" href="css/css-52.html"><span class="num">52</span><div><b>Program 52</b><small>Create a responsive footer using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-53.html"><span class="num">53</span><div><b>Program 53</b><small>Create a responsive login and signup page.</small></div></a>
+<a class="program" href="css/css-54.html"><span class="num">54</span><div><b>Program 54</b><small>Create a responsive contact form.</small></div></a>
+<a class="program" href="css/css-55.html"><span class="num">55</span><div><b>Program 55</b><small>Create a responsive college website homepage.</small></div></a>
+<a class="program" href="css/css-56.html"><span class="num">56</span><div><b>Program 56</b><small>Create a restaurant webpage using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-57.html"><span class="num">57</span><div><b>Program 57</b><small>Create an online shopping webpage using CSS.</small></div></a>
+<a class="program" href="css/css-58.html"><span class="num">58</span><div><b>Program 58</b><small>Create a travel website homepage using CSS.</small></div></a>
+<a class="program" href="css/css-59.html"><span class="num">59</span><div><b>Program 59</b><small>Create a news/blog webpage layout using CSS Grid.</small></div></a>
+<a class="program" href="css/css-60.html"><span class="num">60</span><div><b>Program 60</b><small>Create a portfolio website with multiple sections using HTML and CSS.</small></div></a>
+<a class="program" href="css/css-61.html"><span class="num">61</span><div><b>Program 61</b><small>Create a webpage using CSS Grid template areas.</small></div></a>
+<a class="program" href="css/css-62.html"><span class="num">62</span><div><b>Program 62</b><small>Demonstrate Flexbox alignment and ordering properties.</small></div></a>
+<a class="program" href="css/css-63.html"><span class="num">63</span><div><b>Program 63</b><small>Create a responsive layout using CSS Grid and media queries.</small></div></a>
+<a class="program" href="css/css-64.html"><span class="num">64</span><div><b>Program 64</b><small>Create a mobile-first responsive webpage.</small></div></a>
+<a class="program" href="css/css-65.html"><span class="num">65</span><div><b>Program 65</b><small>Create a webpage demonstrating CSS transitions.</small></div></a>
+<a class="program" href="css/css-66.html"><span class="num">66</span><div><b>Program 66</b><small>Create a webpage demonstrating 2D and 3D CSS transformations.</small></div></a>
+<a class="program" href="css/css-67.html"><span class="num">67</span><div><b>Program 67</b><small>Create a webpage using keyframe animations.</small></div></a>
+<a class="program" href="css/css-68.html"><span class="num">68</span><div><b>Program 68</b><small>Create a loading spinner animation using CSS.</small></div></a>
+<a class="program" href="css/css-69.html"><span class="num">69</span><div><b>Program 69</b><small>Create a sliding image/card animation using CSS.</small></div></a>
+<a class="program" href="css/css-70.html"><span class="num">70</span><div><b>Program 70</b><small>Create a CSS-only modal/popup design.</small></div></a>
+<a class="program" href="css/css-71.html"><span class="num">71</span><div><b>Program 71</b><small>Create a dark-mode webpage using CSS variables.</small></div></a>
+<a class="program" href="css/css-72.html"><span class="num">72</span><div><b>Program 72</b><small>Create a webpage demonstrating responsive typography.</small></div></a>
+<a class="program" href="css/css-73.html"><span class="num">73</span><div><b>Program 73</b><small>Create a webpage using clamp(), min(), and max() CSS functions.</small></div></a>
+<a class="program" href="css/css-74.html"><span class="num">74</span><div><b>Program 74</b><small>Create a webpage demonstrating CSS calc() function.</small></div></a>
+<a class="program" href="css/css-75.html"><span class="num">75</span><div><b>Program 75</b><small>Create a complete responsive website using HTML5, CSS3, Flexbox, Grid, and media queries.</small></div></a>
+</div><a class="top" href="#top">↑ Back to top</a>
+</section>
+<section class="section" id="javascript">
+<div class="section-head"><div class="section-title"><span class="icon">⚡</span><div><h2>JavaScript Programs</h2><p>All JavaScript practical programs with their questions. Each item opens its own separate program file.</p></div></div><span class="count">67 Programs</span></div>
+<div class="list">
+<a class="program" href="javascript/js-01.html"><span class="num">01</span><div><b>Program 1</b><small>Write a JavaScript program to display “Hello World”.</small></div></a>
+<a class="program" href="javascript/js-02.html"><span class="num">02</span><div><b>Program 2</b><small>Write a JavaScript program to perform arithmetic operations.</small></div></a>
+<a class="program" href="javascript/js-03.html"><span class="num">03</span><div><b>Program 3</b><small>Write a program to find the largest of three numbers.</small></div></a>
+<a class="program" href="javascript/js-04.html"><span class="num">04</span><div><b>Program 4</b><small>Write a program to check whether a number is even or odd.</small></div></a>
+<a class="program" href="javascript/js-05.html"><span class="num">05</span><div><b>Program 5</b><small>Write a program to check whether a number is positive, negative, or zero.</small></div></a>
+<a class="program" href="javascript/js-06.html"><span class="num">06</span><div><b>Program 6</b><small>Write a program to find the factorial of a number.</small></div></a>
+<a class="program" href="javascript/js-07.html"><span class="num">07</span><div><b>Program 7</b><small>Write a program to generate the Fibonacci series.</small></div></a>
+<a class="program" href="javascript/js-08.html"><span class="num">08</span><div><b>Program 8</b><small>Write a program to check whether a number is prime.</small></div></a>
+<a class="program" href="javascript/js-09.html"><span class="num">09</span><div><b>Program 9</b><small>Write a program to check whether a number is a palindrome.</small></div></a>
+<a class="program" href="javascript/js-10.html"><span class="num">10</span><div><b>Program 10</b><small>Write a program to reverse a number.</small></div></a>
+<a class="program" href="javascript/js-11.html"><span class="num">11</span><div><b>Program 11</b><small>Write a program to find the sum of digits of a number.</small></div></a>
+<a class="program" href="javascript/js-12.html"><span class="num">12</span><div><b>Program 12</b><small>Write a program to find the largest and smallest element in an array.</small></div></a>
+<a class="program" href="javascript/js-13.html"><span class="num">13</span><div><b>Program 13</b><small>Write a program to sort an array.</small></div></a>
+<a class="program" href="javascript/js-14.html"><span class="num">14</span><div><b>Program 14</b><small>Write a program to find the sum and average of array elements.</small></div></a>
+<a class="program" href="javascript/js-15.html"><span class="num">15</span><div><b>Program 15</b><small>Write a program to demonstrate JavaScript functions.</small></div></a>
+<a class="program" href="javascript/js-16.html"><span class="num">16</span><div><b>Program 16</b><small>Write a program using arrow functions.</small></div></a>
+<a class="program" href="javascript/js-17.html"><span class="num">17</span><div><b>Program 17</b><small>Write a program demonstrating strings and string methods.</small></div></a>
+<a class="program" href="javascript/js-18.html"><span class="num">18</span><div><b>Program 18</b><small>Write a program demonstrating arrays and array methods.</small></div></a>
+<a class="program" href="javascript/js-19.html"><span class="num">19</span><div><b>Program 19</b><small>Write a program demonstrating objects in JavaScript.</small></div></a>
+<a class="program" href="javascript/js-20.html"><span class="num">20</span><div><b>Program 20</b><small>Write a program demonstrating Date and Math objects.</small></div></a>
+<a class="program" href="javascript/js-21.html"><span class="num">21</span><div><b>Program 21</b><small>DOM &amp;amp; Event-Based Experiments</small></div></a>
+<a class="program" href="javascript/js-22.html"><span class="num">22</span><div><b>Program 22</b><small>Create a webpage that changes text using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-23.html"><span class="num">23</span><div><b>Program 23</b><small>Change the background color of a webpage using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-24.html"><span class="num">24</span><div><b>Program 24</b><small>Create a button click event using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-25.html"><span class="num">25</span><div><b>Program 25</b><small>Create a program to show/hide an HTML element.</small></div></a>
+<a class="program" href="javascript/js-26.html"><span class="num">26</span><div><b>Program 26</b><small>Create a program to change an image when a button is clicked.</small></div></a>
+<a class="program" href="javascript/js-27.html"><span class="num">27</span><div><b>Program 27</b><small>Create a digital clock using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-28.html"><span class="num">28</span><div><b>Program 28</b><small>Create a simple calculator using HTML, CSS, and JavaScript.</small></div></a>
+<a class="program" href="javascript/js-29.html"><span class="num">29</span><div><b>Program 29</b><small>Create a number guessing game.</small></div></a>
+<a class="program" href="javascript/js-30.html"><span class="num">30</span><div><b>Program 30</b><small>Create a form validation program.</small></div></a>
+<a class="program" href="javascript/js-31.html"><span class="num">31</span><div><b>Program 31</b><small>Validate name, email, phone number, and password using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-32.html"><span class="num">32</span><div><b>Program 32</b><small>Create a to-do list using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-33.html"><span class="num">33</span><div><b>Program 33</b><small>Create a simple quiz application.</small></div></a>
+<a class="program" href="javascript/js-34.html"><span class="num">34</span><div><b>Program 34</b><small>Create a counter application with increment and decrement buttons.</small></div></a>
+<a class="program" href="javascript/js-35.html"><span class="num">35</span><div><b>Program 35</b><small>Create a stopwatch using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-36.html"><span class="num">36</span><div><b>Program 36</b><small>Create a countdown timer using JavaScript.</small></div></a>
+<a class="program" href="javascript/js-37.html"><span class="num">37</span><div><b>Program 37</b><small>Advanced JavaScript Lab Questions</small></div></a>
+<a class="program" href="javascript/js-38.html"><span class="num">38</span><div><b>Program 38</b><small>Demonstrate ES6 let, const, template literals, and destructuring.</small></div></a>
+<a class="program" href="javascript/js-39.html"><span class="num">39</span><div><b>Program 39</b><small>Demonstrate spread and rest operators.</small></div></a>
+<a class="program" href="javascript/js-40.html"><span class="num">40</span><div><b>Program 40</b><small>Demonstrate classes and objects.</small></div></a>
+<a class="program" href="javascript/js-41.html"><span class="num">41</span><div><b>Program 41</b><small>Demonstrate inheritance in JavaScript.</small></div></a>
+<a class="program" href="javascript/js-42.html"><span class="num">42</span><div><b>Program 42</b><small>Demonstrate callbacks, promises, and async/await.</small></div></a>
+<a class="program" href="javascript/js-43.html"><span class="num">43</span><div><b>Program 43</b><small>Fetch data from an API using Fetch API.</small></div></a>
+<a class="program" href="javascript/js-44.html"><span class="num">44</span><div><b>Program 44</b><small>Display API data dynamically on a webpage.</small></div></a>
+<a class="program" href="javascript/js-45.html"><span class="num">45</span><div><b>Program 45</b><small>Store and retrieve data using localStorage.</small></div></a>
+<a class="program" href="javascript/js-46.html"><span class="num">46</span><div><b>Program 46</b><small>Create a responsive login form with JavaScript validation.</small></div></a>
+<a class="program" href="javascript/js-47.html"><span class="num">47</span><div><b>Program 47</b><small>Create a complete interactive webpage using HTML, CSS, and JavaScript.</small></div></a>
+<a class="program" href="javascript/js-48.html"><span class="num">48</span><div><b>Program 48</b><small>Write a JavaScript program to swap two numbers.</small></div></a>
+<a class="program" href="javascript/js-49.html"><span class="num">49</span><div><b>Program 49</b><small>Write a program to find the greatest common divisor (GCD) of two numbers.</small></div></a>
+<a class="program" href="javascript/js-50.html"><span class="num">50</span><div><b>Program 50</b><small>Write a program to find the least common multiple (LCM) of two numbers.</small></div></a>
+<a class="program" href="javascript/js-51.html"><span class="num">51</span><div><b>Program 51</b><small>Write a program to check whether a number is an Armstrong number.</small></div></a>
+<a class="program" href="javascript/js-52.html"><span class="num">52</span><div><b>Program 52</b><small>Write a program to check whether a number is a perfect number.</small></div></a>
+<a class="program" href="javascript/js-53.html"><span class="num">53</span><div><b>Program 53</b><small>Write a program to generate the multiplication table of a given number.</small></div></a>
+<a class="program" href="javascript/js-54.html"><span class="num">54</span><div><b>Program 54</b><small>Write a program to calculate the power of a number.</small></div></a>
+<a class="program" href="javascript/js-55.html"><span class="num">55</span><div><b>Program 55</b><small>Write a program to count the number of digits in a number.</small></div></a>
+<a class="program" href="javascript/js-56.html"><span class="num">56</span><div><b>Program 56</b><small>Write a program to find the second-largest element in an array.</small></div></a>
+<a class="program" href="javascript/js-57.html"><span class="num">57</span><div><b>Program 57</b><small>Write a program to remove duplicate elements from an array.</small></div></a>
+<a class="program" href="javascript/js-58.html"><span class="num">58</span><div><b>Program 58</b><small>Write a program to merge two arrays.</small></div></a>
+<a class="program" href="javascript/js-59.html"><span class="num">59</span><div><b>Program 59</b><small>Write a program to find the frequency of each element in an array.</small></div></a>
+<a class="program" href="javascript/js-60.html"><span class="num">60</span><div><b>Program 60</b><small>Write a program to find common elements in two arrays.</small></div></a>
+<a class="program" href="javascript/js-61.html"><span class="num">61</span><div><b>Program 61</b><small>Write a program to reverse a string.</small></div></a>
+<a class="program" href="javascript/js-62.html"><span class="num">62</span><div><b>Program 62</b><small>Write a program to check whether a string is a palindrome.</small></div></a>
+<a class="program" href="javascript/js-63.html"><span class="num">63</span><div><b>Program 63</b><small>Write a program to count vowels and consonants in a string.</small></div></a>
+<a class="program" href="javascript/js-64.html"><span class="num">64</span><div><b>Program 64</b><small>Write a program to count the number of words in a string.</small></div></a>
+<a class="program" href="javascript/js-65.html"><span class="num">65</span><div><b>Program 65</b><small>Write a program to find the frequency of characters in a string.</small></div></a>
+<a class="program" href="javascript/js-66.html"><span class="num">66</span><div><b>Program 66</b><small>Write a program to demonstrate regular expressions in JavaScript.</small></div></a>
+<a class="program" href="javascript/js-67.html"><span class="num">67</span><div><b>Program 67</b><small>Write a program to validate an email address using a regular expression.</small></div></a>
+</div><a class="top" href="#top">↑ Back to top</a>
+</section>
+</main>
+<footer>Web Technology Practical Programs © 2026 • HTML 15 • CSS 75 • JavaScript 67</footer>
+</body>
+</html>
