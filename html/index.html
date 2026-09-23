@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>HTML Practical Programs</title>
+<style>
+
+:root{
+  --primary:#0b74e8;
+  --primary2:#2563eb;
+  --dark:#102a43;
+  --muted:#5b7083;
+  --bg:#eef6ff;
+  --card:#ffffff;
+  --border:#d9e7f5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#0b2d68,#0876d1 55%,#54b7e8);
+  min-height:100vh;color:#17324d;
+}
+.page{max-width:1100px;margin:0 auto;padding:28px 18px 45px}
+.topbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.topbar a,.btn{
+  display:inline-block;text-decoration:none;color:white;background:var(--primary);
+  padding:10px 16px;border-radius:9px;font-weight:700;border:0;cursor:pointer
+}
+.topbar a:hover,.btn:hover{filter:brightness(.92)}
+.card{
+  background:rgba(255,255,255,.97);border-radius:20px;padding:28px;
+  box-shadow:0 14px 40px rgba(0,0,0,.16);margin-bottom:20px
+}
+h1{margin:0 0 8px;font-size:clamp(26px,4vw,40px);color:var(--dark)}
+h2{color:var(--primary2)}
+.subtitle{color:var(--muted);line-height:1.6}
+.question{
+  background:#f5faff;border-left:5px solid var(--primary);padding:15px 18px;
+  border-radius:10px;line-height:1.6
+}
+.demo{margin-top:20px;padding:22px;background:#fff;border:1px solid var(--border);border-radius:14px}
+input,select,textarea{padding:10px;border:1px solid #b8cce0;border-radius:8px;margin:5px 0;max-width:100%}
+button{padding:10px 16px;border:0;border-radius:8px;background:var(--primary);color:white;font-weight:700;cursor:pointer}
+table{border-collapse:collapse;width:100%;margin:15px 0}
+th,td{border:1px solid #9fb6cc;padding:10px;text-align:center}
+th{background:#eaf4ff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.box{padding:18px;border-radius:12px;background:#eef7ff;border:1px solid #cfe3f7}
+.note{font-size:14px;color:var(--muted)}
+.result{margin-top:15px;padding:12px;border-radius:8px;background:#edf8ef;color:#175b28;font-weight:700}
+footer{text-align:center;color:#e9f5ff;margin-top:20px;font-size:14px}
+@media(max-width:650px){.card{padding:20px}.topbar a{width:100%;text-align:center}}
+
+.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.program{display:flex;gap:14px;align-items:flex-start;text-decoration:none;color:#17324d;background:#fff;border:1px solid #d9e7f5;border-radius:14px;padding:16px;transition:.2s}
+.program:hover{transform:translateY(-3px);box-shadow:0 8px 20px #0002}
+.program span{background:#0b74e8;color:white;border-radius:9px;padding:8px 10px;font-weight:700}
+.program small{display:block;color:#5b7083;line-height:1.45;margin-top:5px}
+.badge{display:inline-block;background:#eaf4ff;color:#0b74e8;padding:7px 11px;border-radius:99px;font-weight:700}
+</style></head><body><div class="page">
+<nav class="topbar"><a href="../index.html">⌂ Home</a></nav>
+<main class="card"><span class="badge">15 programs</span><h1>HTML Programs</h1>
+<p class="subtitle">Every experiment is a separate HTML file. Click any program to open its working demonstration and question.</p>
+<div class="list"><a class='program' href='html-01.html'><span>01</span><div><b>Program 1</b><small>Create a basic HTML webpage using headings, paragraphs, and line breaks.</small></div></a><a class='program' href='html-02.html'><span>02</span><div><b>Program 2</b><small>Create an HTML page containing ordered, unordered, and description lists.</small></div></a><a class='program' href='html-03.html'><span>03</span><div><b>Program 3</b><small>Create a webpage using tables with rows, columns, borders, and merged cells.</small></div></a><a class='program' href='html-04.html'><span>04</span><div><b>Program 4</b><small>Create an HTML page containing images and hyperlinks.</small></div></a><a class='program' href='html-05.html'><span>05</span><div><b>Program 5</b><small>Create a student registration form using HTML form elements.</small></div></a><a class='program' href='html-06.html'><span>06</span><div><b>Program 6</b><small>Create a webpage using audio and video elements.</small></div></a><a class='program' href='html-07.html'><span>07</span><div><b>Program 7</b><small>Create a webpage using frames/iframes.</small></div></a><a class='program' href='html-08.html'><span>08</span><div><b>Program 8</b><small>Create an HTML page demonstrating semantic elements such as &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, and &lt;footer&gt;.</small></div></a><a class='program' href='html-09.html'><span>09</span><div><b>Program 9</b><small>Create a webpage using HTML5 input types such as email, date, number, and password.</small></div></a><a class='program' href='html-10.html'><span>10</span><div><b>Program 10</b><small>Create a college timetable using an HTML table.</small></div></a><a class='program' href='html-11.html'><span>11</span><div><b>Program 11</b><small>Create a webpage with internal and external CSS styling.</small></div></a><a class='program' href='html-12.html'><span>12</span><div><b>Program 12</b><small>Create a webpage demonstrating CSS selectors, colors, fonts, margins, padding, and borders.</small></div></a><a class='program' href='html-13.html'><span>13</span><div><b>Program 13</b><small>Create a responsive webpage using CSS media queries.</small></div></a><a class='program' href='html-14.html'><span>14</span><div><b>Program 14</b><small>Create a webpage using Bootstrap components.</small></div></a><a class='program' href='html-15.html'><span>15</span><div><b>Program 15</b><small>Create a simple personal portfolio webpage using HTML and CSS.</small></div></a></div></main><footer>Web Technology Practical Programs © 2026</footer></div></body></html>
